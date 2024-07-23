@@ -1,0 +1,151 @@
+:root {
+    --blanco: #ffff;
+    /* Define una variable de color llamada 'blanco' con el valor hexadecimal #ffff */
+    --rosa: hsl(330, 100%, 98%);
+    /* Define una variable de color llamada 'rosa-blanco' con el valor HSL */
+    --Eggshell: hsl(30, 54%, 90%);
+    /* Define una variable de color llamada 'Eggshell' con el valor HSL */
+    --Light-grey: hsl(30, 18%, 87%);
+    /* Define una variable de color llamada 'Light-grey' con el valor HSL */
+    --Wenge-Brown: hsl(33, 57%, 42%);
+    /* Define una variable de color llamada 'Wenge-Brown' con el valor HSL */
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+    /* Define una variable de color llamada 'Dark-Charcoal' con el valor HSL */
+}
+
+/************************************************************************/
+
+html {
+    font-size: "paragraph" 16px;
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    margin: 2%;
+
+}
+
+/************************************************************************/
+
+
+/* tamaños para los textos */
+h1 {
+    font-size: 4rem;
+    /* Establece el tamaño de la fuente a 4 rem */
+    color: var(--dark);
+    /* Establece el color de la fuente usando la variable 'dark' */
+    font-weight: bolder;
+    /* Establece el peso de la fuente a 'bolder' */
+}
+
+h1 span {
+    font-size: 2rem;
+    /* Establece el tamaño de la fuente del span dentro de h1 a 2 rem */
+}
+
+h2 {
+    font-size: 3rem;
+    /* Establece el tamaño de la fuente del h2 a 3 rem */
+}
+
+h3 {
+    font-size: 2.5rem;
+    color: var(--Wenge-Brown);
+    /* Establece el tamaño de la fuente del h3 a 2 rem */
+}
+
+p {
+    font-size: 1.5rem;
+    /* Establece el tamaño de la fuente del párrafo a 1.5 rem */
+}
+
+
+.banner img {
+    width: 100%;
+    height: 600px;
+    border-radius: 2%;
+}
+
+.section-inicio h1 {
+    text-align: left;
+
+}
+
+.section-inicio p {
+    text-align: left;
+}
+
+.section-preparacion {
+    background-color: var(--rosa);
+    width: 100%;
+    padding-bottom: 1rem;
+
+
+}
+
+.section-preparacion h3 {
+    margin: 2%;
+}
+
+.lista li {
+    margin-bottom: 2em;
+    /* Añade un margen inferior para separar las líneas */
+    font-size: 15px;
+}
+
+.lista li::marker {
+    color: var(--Wenge-Brown);
+}
+
+.container h3 {
+    color: indianred;
+}
+
+
+
+
+.table {
+    width: 60%;
+    border-collapse: collapse;
+    /* Asegura que los bordes colapsen en uno solo */
+    font-size: 15px;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    /* Añade un padding a las celdas */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+}
+
+.table thead tr {
+    border-bottom: 2px solid #dddddd;
+    /* Añade una línea horizontal más gruesa debajo del encabezado */
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    /* Añade una línea horizontal a cada fila del cuerpo */
+}
+
+.table .number {
+    color: var(--Wenge-Brown);
+    /* Puedes cambiar el color según tu preferencia */
+}
+
+
+/* Media Queries para dispositivos móviles */
+
+@media (max-width: 480px) {
+
+    .banner img {
+        height: auto;
+        /* Asegura que la imagen mantenga su proporción */
+    }
+
+    .section-preparacion {
+        padding-top: 1rem;
+
+    }
+
+}

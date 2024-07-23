@@ -104,7 +104,7 @@ p {
 
 
 .table {
-    width: 60%;
+    width: 100%;
     border-collapse: collapse;
     /* Asegura que los bordes colapsen en uno solo */
     font-size: 15px;
